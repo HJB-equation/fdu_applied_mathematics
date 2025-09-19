@@ -79,7 +79,7 @@ class _InitialValueState extends State<InitialValue> {
       padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          ElevatedButton(onPressed: _setValue, child: const Text('Set')),
+          ElevatedButton(onPressed: _setValue, child: const Text('Set x0')),
           const SizedBox(width: 8),
           Expanded(
             child: TextField(
@@ -105,7 +105,7 @@ class StepButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () => context.read<M>().add(Step1()),
-      child: Text("Step"),
+      child: Text("exp"),
     );
   }
 }
